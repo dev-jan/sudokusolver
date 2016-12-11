@@ -3,7 +3,9 @@
 
 ## How to run it?
 Follow this simple steps to solve a sudoku:
-1. Install a prolog environment:
+
+- Install a prolog environment:
+
 ```
     # on debian/ubuntu/mint based linux distributions
     sudo apt-get install swi-prolog
@@ -11,7 +13,8 @@ Follow this simple steps to solve a sudoku:
     # others: find out yourself on google... ;)
 ```
 
-2. Run the prolog console
+- Run the prolog console
+
 ```
     $ cd <THIS_REPO>
     $ swi-pl
@@ -20,7 +23,8 @@ Follow this simple steps to solve a sudoku:
     ?-
 ```
 
-3. Define a sudoku and run the solver
+- Define a sudoku and run the solver
+
 ```
     [sudoku].
     S = [_,_,_,2,6,_,7,_,1,
@@ -34,13 +38,16 @@ Follow this simple steps to solve a sudoku:
          7,_,3,_,1,8,_,_,_],
     solvesudoku(S, Solution).
 ```
+
 or run the demonstration file:
+
 ```
     [demonstration].
     test.
 ```
 
 The output will be something like this:
+
 ```
 ?- [sudoku].
 true.
@@ -69,5 +76,4 @@ Solution:
 [7,6,3,4,1,8,2,5,9]
 
 S = Solution, Solution = [4, 3, 5, 2, 6, 9, 7, 8, 1|...].
-
 ```
