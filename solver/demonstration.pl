@@ -1,4 +1,4 @@
-[sudoku]. % include sudoku solver
+:- [sudoku]. % include sudoku solver
 
 test() :-
     S = [_,_,_,2,6,_,7,_,1,
